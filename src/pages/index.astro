@@ -1,16 +1,71 @@
 ---
-
+const siteName = "Veggietable";
+const tagline = "Simple vegetarian recipes, nutrition insights, and practical food guides.";
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{siteName} – Healthy Vegetarian Food & Recipes</title>
+    <meta name="description" content={tagline} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <header>
+      <h1>{siteName}</h1>
+      <p>{tagline}</p>
+    </header>
+
+    <!-- Primary Navigation -->
+    <nav>
+      <ul>
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/nutrition">Nutrition & Ingredients</a></li>
+        <li><a href="/guides">Guides & Meal Planning</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- Content Pillars -->
+    <main>
+      <section>
+        <h2>Vegetarian Recipes</h2>
+        <p>
+          Everyday vegetarian recipes that are simple, healthy, and practical for real life.
+        </p>
+        <a href="/recipes">Explore recipes →</a>
+      </section>
+
+      <section>
+        <h2>Nutrition & Ingredients</h2>
+        <p>
+          Learn about vegetables, nutrients, and ingredients — benefits, facts, and how to use them.
+        </p>
+        <a href="/nutrition">Learn nutrition →</a>
+      </section>
+
+      <section>
+        <h2>Guides & Meal Planning</h2>
+        <p>
+          Clear guides for beginners, diet-focused plans, and smart ways to eat better every day.
+        </p>
+        <a href="/guides">Read guides →</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© {new Date().getFullYear()} Veggietable. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
+
