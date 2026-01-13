@@ -21,5 +21,40 @@ const { Content } = await post.render();
   pubDate={post.data.pubDate}
   image={post.data.image}
 >
-  <Content />
+ <article class="blog">
+  {post.data.image && (
+    <img
+      src={post.data.image}
+      alt={post.data.title}
+      class="hero"
+    />
+  )}
+
+  <h1>{post.data.title}</h1>
+  <p class="date">
+    {post.data.pubDate.toDateString()}
+  </p>
+
+  <post.Content />
+</article>
+
+<style>
+  .blog {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+
+  .hero {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .date {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+</style>
+
 </BlogLayout>
