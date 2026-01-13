@@ -1,7 +1,7 @@
 ---
 title: Why Vegetarian Eating Is Gaining Momentum in 2026
 description: A practical look at why more people are choosing vegetarian food for health, sustainability, and simplicity.
-pubDate: 2026-01-12
+pubDate: 2026-01-13
 image: /images/blog/vegetarian-eating.jpg
 ---
 
