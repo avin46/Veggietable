@@ -3,7 +3,11 @@ title: "Why Vegetarian Eating Is Gaining Momentum in 2026"
 description: "A practical look at why more people are choosing vegetarian food for health and sustainability."
 pubDate: 2026-01-13
 heroImage: "/images/blog/vegetarian-eating.jpg"
+
+seoTitle: "Vegetarian Eating in 2026 – Health, Sustainability & Simplicity"
+seoDescription: "Why vegetarian eating is becoming mainstream in 2026. Health benefits, sustainability, and practical insights."
 ---
+
 
 Vegetarian eating is no longer a niche choice. In 2026, it is becoming a practical, mainstream approach to food.
 

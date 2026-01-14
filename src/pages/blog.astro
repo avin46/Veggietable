@@ -1,5 +1,19 @@
 ---
 import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
+---
+
+<html lang="en">
+  <head>
+    <title>Blog – Veggietable</title>
+    <meta
+      name="description"
+      content="Articles on vegetarian food, nutrition, sustainability, and healthy living."
+    />
+  </head>
+
+---
+import { getCollection } from "astro:content";
 
 const posts = await getCollection("blog");
 const sortedPosts = posts.sort(
