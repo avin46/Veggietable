@@ -1,8 +1,25 @@
+---
+const {
+  title = "Veggietable",
+  description = "Healthy vegetarian recipes and food stories",
+  image = "/images/og-default.jpg",
+  url = "https://veggietable.in"
+} = Astro.props;
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <slot name="head" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <slot />
