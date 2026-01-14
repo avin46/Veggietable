@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -16,8 +17,8 @@ const seoTitle = post.data.seoTitle ?? post.data.title;
 const seoDescription = post.data.seoDescription ?? post.data.description;
 ---
 
-<html lang="en">
-  <head>
+<Layout>
+  <Fragment slot="head">
     <title>{seoTitle}</title>
     <meta name="description" content={seoDescription} />
 
@@ -32,22 +33,4 @@ const seoDescription = post.data.seoDescription ?? post.data.description;
     <meta name="twitter:title" content={seoTitle} />
     <meta name="twitter:description" content={seoDescription} />
     <meta name="twitter:image" content={post.data.heroImage} />
-  </head>
-
-  <body>
-    <article>
-      <img
-        src={post.data.heroImage}
-        alt={post.data.title}
-        style="width:100%; border-radius:16px; margin-bottom:24px;"
-      />
-
-      <h1>{post.data.title}</h1>
-      <p>{post.data.pubDate.toDateString()}</p>
-
-      <div>
-        <post.Content />
-      </div>
-    </article>
-  </body>
-</html>
+  </Fragmen
