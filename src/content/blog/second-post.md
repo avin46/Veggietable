@@ -1,26 +1,9 @@
 ---
-
-title: "Simple Vegetarian Meals for Busy Weekdays"
-
-description: "Easy vegetarian meals that fit into a busy work schedule without compromising nutrition."
-
-pubDate: 2026-01-15
-
+title: "Why Home Cooking Is Making a Comeback"
+description: "How simple home cooking is becoming popular again for health, cost, and peace of mind."
+pubDate: 2026-01-14
 heroImage: "/images/blog/vegetarian-eating.jpg"
-
 ---
 
-
-
-Eating vegetarian does not need to be complicated.
-
-
-
-With a few staple ingredients and simple preparation methods, it’s possible to cook nutritious meals even on the busiest weekdays.
-
-
-
-This post focuses on practical, repeatable meal ideas that save time and reduce decision fatigue.
-
-
-
+Home cooking is regaining popularity as people seek control over ingredients,
+costs, and daily nutrition.
